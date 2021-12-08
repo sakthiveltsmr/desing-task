@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+.sas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+
+  width: 400px;
+  /* height: 800px; */
+  background-color: rgb(6, 78, 126);
+
+  border-radius: 20px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  /* padding-left: 2rem; */
+  padding-top: 2rem;
+  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+}
+.ss {
+  /* padding-left: 3rem; */
+  color: aliceblue;
+  border-bottom: 1.5px solid white;
+  padding-bottom: 10px;
+}
+.to {
+  color: hsl(215, 87%, 76%);
+  font-size: 18px;
+}
+.battom {
+  /* padding-left: 2rem; */
+  padding-right: 2rem;
+}
+.avatar {
+  height: 4rem;
+  width: 4rem;
+
+  padding-right: 20px;
+}
+.last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+#sp {
+  color: hsl(215, 87%, 76%);
+  margin-top: 20px;
+}
+
+#ssp {
+  color: hsl(0, 0%, 100%);
+  margin-top: 20px;
+}
+
+.num {
+  color: skyblue;
+  font-size: larger;
+}
+.time {
+  color: hsl(215, 87%, 76%);
+  padding-left: 7rem;
+}
