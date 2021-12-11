@@ -1,0 +1,95 @@
+section {
+  /*     display:flex;
+        flex-wrap:wrap; */
+  display: grid;
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  /*   gird-template-rows:1fr 2fr; */
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six";
+  gap: 10px;
+}
+
+@media (min-width: 400px) {
+  section {
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    grid-template-areas:
+      "one one"
+      "two two"
+      "three three"
+      "four four"
+      "five five"
+      "six six";
+  }
+}
+@media (min-width: 500px) {
+  section {
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    grid-template-areas:
+      "one one two"
+      "one one two"
+      "three three four"
+      "three three four"
+      "five five six"
+      "five five six";
+  }
+}
+@media (min-width: 600px) {
+  section {
+    grid-template-areas:
+      "one one two four"
+      "one one two three"
+      "one one five five"
+      "six six five five";
+  }
+}
+div {
+  /* background-color: orange; */
+
+  min-height: 15rem;
+  min-width: 10rem;
+
+  border: 4px solid black;
+  /*   width:100px; */
+  margin-bottom: 10px;
+  box-shadow: 1px 5px 7px;
+  /*   display:inline-block; */
+}
+
+div:nth-child(1) {
+  grid-area: one;
+  background: url("https://images.pexels.com/photos/416179/pexels-photo-416179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+}
+div:nth-child(2) {
+  grid-area: two;
+  background: url("https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+}
+div:nth-child(3) {
+  grid-area: three;
+
+  background: url("https://images.pexels.com/photos/349758/hummingbird-bird-birds-349758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+}
+div:nth-child(4) {
+  grid-area: four;
+
+  background: url("https://w0.peakpx.com/wallpaper/454/1022/HD-wallpaper-rabbit-animal.jpg");
+  background-size: cover;
+}
+div:nth-child(5) {
+  grid-area: five;
+
+  background: url("https://wallpaperaccess.com/full/675526.jpg");
+  background-size: cover;
+}
+div:nth-child(6) {
+  grid-area: six;
+  background: url("https://images8.alphacoders.com/380/thumb-1920-380977.jpg");
+  background-size: cover;
+}
