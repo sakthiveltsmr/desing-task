@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.wrapper {
+  display: flex;
+  background-color: rgb(230, 102, 177);
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
+  /* Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  padding: 10px;
+  border: 1px double #16da71;
+  box-shadow: 1px 5px 10px #94cfb1;
+  border-radius: 15px;
+  color: rgb(25, 0, 255);
+  background-color: rgb(164, 223, 105);
+}
+.title:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
+  cursor: pointer;
+}
+.menu {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.menu .list-item {
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+  margin: 5px 0;
+  box-shadow: 0px 20px 40px burlywood;
+}
+.list-item a {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.list-item a:hover span {
+  width: auto;
+  color: #fff;
+  padding: 0 20px;
+  overflow: visible;
+}
+.list-item * {
+  background: #94cfb1;
+}
+.list-item a span {
+  width: 0;
+  left: 40px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.6;
+  white-space: nowrap;
+  line-height: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  transition: 0.25s;
+}
