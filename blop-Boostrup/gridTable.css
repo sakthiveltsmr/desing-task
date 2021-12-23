@@ -1,0 +1,30 @@
+div.container {
+  background-color: rgb(247, 239, 167);
+  /* height: 100%; */
+}
+body {
+  background-color: rgb(60, 105, 15);
+  /* text-align: center; */
+}
+
+.bg {
+  border: 3px solid #fff;
+  padding: 10px;
+  /* text-align: center; */
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: url("https://st.depositphotos.com/1428083/2946/i/600/depositphotos_29460297-stock-photo-bird-cage.jpg");
+  /* background-color: crimson; */
+  background-size: no-repeat;
+}
+
+ol {
+  list-style-type: none;
+}
+/* .pad {
+      padding: 30px;
+    } */
+.height-500 {
+  min-height: 700px;
+}
